@@ -40,6 +40,8 @@ Controlling the Go Runtime flawlessly under massive request load.
 - **[Bounded Worker Pool](./workerpool/pool.go)**: Preventing OOM crashes by strictly pacing Goroutine spawning using a Job Dispatcher pipeline.
 - **[Context Deep Dive](./traffic_engineering/go-network-systems/concurrency/context/main.go)**: Advanced context propagation, cancellation trees, and value-passing.
 - **[WaitGroup Synchronization](./waitgroup/waitgroup_example.go)**: Coordinating parallel task execution with `sync.WaitGroup`.
+- **[Classic Ping-Pong](./classic-ping-pong/main.go)**: Demonstrating synchronized communication between two goroutines using unbuffered channels and `sync.WaitGroup`.
+
 - **[Concurrency: Work Stealing](./traffic_engineering/go-network-systems/concurrency/work_stealing/main.go)**: Custom scheduler patterns and task distribution.
 - **[Lock-Free Hot Swapping (xDS)](./advanced_concurrency/lockfree_config.go)**: How Proxies update massive routing tables dynamically while traffic flows by swinging pointers with `sync/atomic.Value`.
 - **[Atomic Benchmarks](./traffic_engineering/go-network-systems/concurrency/mutex/main.go)**: Comparing performance between `sync.Mutex` and `sync/atomic`.
